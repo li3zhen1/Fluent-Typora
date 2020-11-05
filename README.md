@@ -29,7 +29,7 @@ English, 简体中文
 
 ## Tricky Escapings
 
-Some escapings was implemented with css:
+Some escapings were implemented in css:
 
 - Bold text in h5 (example: `##### **12** What does fluent mean?`) would be rendered like this: 
 
