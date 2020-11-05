@@ -20,6 +20,8 @@ Fontfaces you should install before fully utilizing this theme:
 - 思源宋体 CN (**Optional. Only if you need support for Chinese.**)
 
 
+The translucent effect might not work on Linux.
+
 
 ## Language Supported
 
