@@ -10,7 +10,7 @@ This is a theme carefully crafted & designed for modern computer screens, inspir
 
 ## ⚠ Alert
 
-To speed up rendering, it is suggested to **download all the fonts and install them on your system**. (Hence no font was included in the theme package. If the theme was used in your system without the fonts below installed, your document would be rendered with default font.)
+To speed up rendering, it is suggested to **download all the fonts and install them on your system**. (Hence no font was included in the theme package. If the theme was used in your system without the fonts below installed, your document would be rendered with the default fonts.)
 
 Fontfaces you should install before fully utilizing this theme:
 
