@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
     font-feature-settings: "tnum";
 }
 
-.md-toc{
+.md-toc {
     font-weight: 500;
     line-height: 1.2;
     margin-top: 1rem;
@@ -177,8 +177,8 @@ blockquote code {
     background-color: transparent;
 }
 
-h2:hover:before,h1:hover:before,h3:hover:before{
-    content:"#";
+h2:hover:before, h1:hover:before, h3:hover:before {
+    content: "#";
     width: 0px;
     position: absolute;
     left: -24px;
@@ -246,25 +246,14 @@ code, tt {
 
 code {
     color: #37474f;
-    font-weight: inherit;
+    font-weight: 600;
     background-color: #f4f7f8;
-    ;
     padding-left: 4px;
     padding-right: 4px;
     padding-top: 2px;
     padding-bottom: 2px;
 }
 
-code {
-    color: #37474f;
-    font-weight: 600;
-    background-color: #f4f7f8;
-    ;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
 
 mark {
     border-radius: 4px;
@@ -304,12 +293,19 @@ del {
 .md-task-list-item>input {
     margin-left: -1.3em;
 }
+.md-br-content .md-raw-inline{
+    opacity: 0.5;
+}
 
 @media print {
     html {
         font-size: 13px;
         background-color: white;
         line-height: 3!important;
+    }
+    body {
+        margin-top: 24px!important;
+        margin-bottom: 24px!important;
     }
     table, pre {
         page-break-inside: avoid;
@@ -325,45 +321,44 @@ del {
         padding-right: 4px;
     }
     a>span>code, a>code, a code {
+        background-color: #3b78e718!important;
+    }
+    a {
         color: #3b78e7!important;
         text-decoration: none!important;
-        background-color: #3b78e718!important;
     }
     .md-plain {
         line-height: 3!important;
     }
-
-    .page-break{
+    .page-break {
         page-break-after: always;
         break-after: page;
     }
-
-    .page-break:before{
+    .page-break:before {
         content: none
     }
-    code{
+    code {
         font-variant-ligatures: common-ligatures!important;
     }
 }
 
-
-.page-break:before{
+.page-break:before {
     background-color: #05685b;
 }
 
-.page-break:before{
+.page-break:before {
     content: "Page Break"
 }
 
-.md-toc-inner{
+.md-toc-inner {
     margin: 2px;
 }
 
-.md-toc-h1{
+.md-toc-h1 {
     margin-top: 16px;
 }
 
-.md-toc-h2{
+.md-toc-h2 {
     margin-top: 8px;
 }
 
@@ -372,7 +367,6 @@ del {
     border-radius: 4px;
     background-color: #f1f3f4;
 } */
-
 
 .md-p a, a.md-toc-inner {
     color: #3b78e7!important;
@@ -388,7 +382,7 @@ del {
     transition: all 0.16s;
 }
 
-.md-content.md-url{
+.md-content.md-url {
     color: #05685b!important;
     text-decoration: none!important;
     font-family: 'Jetbrains Mono';
@@ -437,7 +431,6 @@ a>span>code, a>code, a code {
 .md-mathjax-midline {
     background: #fafafa;
 }
-
 
 #write>h3.md-focus:before {
     left: -1.5625rem;
@@ -621,8 +614,8 @@ content {
 
 @font-face {
     font-family: 'FontAwesome2';
-    src: url('fonts/fontawesome-webfont.eot?v=4.7.0');
-    src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    src: url('fluent/fontawesome-webfont.eot?v=4.7.0');
+    src: url('fluent/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('fluent/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('fluent/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('fluent/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('fluent/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
