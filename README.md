@@ -23,7 +23,7 @@ Fontfaces you should install before fully utilizing this theme:
 The translucent effect might not work on Linux.
 
 
-## Language Supported
+## Languages Supported
 
 English, 简体中文
 
@@ -33,6 +33,7 @@ English, 简体中文
 
 Some escapings were implemented in css:
 
+
 - Bold text in h5 (example: `##### **12** What does fluent mean?`) would be rendered like this: 
 
   ![escaping1](fluent/escaping1.png)
@@ -41,4 +42,9 @@ Some escapings were implemented in css:
 
 - h4, h5, h6 in blockquotes would be rendered with an icon before the text:
 
+  Ensure that you have **Font Awesome** files included in your typora theme directory (`./themes/fluent`). Files are provided in directory `fluent`.
+
   ![escaping1](/fluent/escaping2.png)
+
+
+  
