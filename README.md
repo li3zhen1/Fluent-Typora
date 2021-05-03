@@ -1,4 +1,4 @@
-![fluent](/fluent/main.png)
+![fluent](/fluent/screenshot.png)
 
 # Fluent-Typora
 
