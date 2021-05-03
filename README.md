@@ -1,6 +1,4 @@
-![fluent light](/fluent/light.png)
-
-![fluent dark](/fluent/dark.png)
+![fluent light](/fluent/main.png)
 
 # Fluent
 
