@@ -147,6 +147,8 @@
 }
 
 :root {
+
+    --table-border: 1px solid var(--color-scale-gray-2) !important;
     --control-text-color: var(--color-text-secondary);
     --title-font: "Inter Display", "Inter";
     --text-font: "Inter";
@@ -360,7 +362,7 @@ ul:last-child, ol:last-child {
 
 blockquote {
     color: var(--text-color);
-    border: 1px solid var(--border);
+    border: var(--table-border);
     background-color: var(--elevated-background);
     border-radius: 4px;
     padding: 12px 16px;
@@ -909,9 +911,7 @@ table.md-table {
     overflow: hidden;
 }
 
-:root {
-    --table-border: 1px solid var(--color-scale-gray-2) !important;
-}
+
 
 table {
     border-collapse: separate;

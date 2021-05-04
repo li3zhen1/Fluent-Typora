@@ -147,6 +147,7 @@
 }
 
 :root {
+    --table-border: 1px solid var(--color-scale-gray-2) !important;
     --control-text-color: var(--color-text-secondary);
     --title-font: "Inter Display", "Inter";
     --text-font: "Inter";
@@ -251,6 +252,7 @@
     --mark-text: #ffe790;
     --text-link: #7492ff;
     --border: #393b3b;
+    --table-border: 1px solid var(--color-scale-gray-6) !important;
 }
 
 /* CJK override */
@@ -408,7 +410,7 @@ ul:last-child, ol:last-child {
 
 blockquote {
     color: var(--text-color);
-    border: 1px solid var(--border);
+    border: var(--table-border);
     background-color: var(--elevated-background);
     border-radius: 4px;
     padding: 12px 16px;
@@ -955,10 +957,6 @@ table.md-table {
     box-sizing: border-box;
     /* border-radius: 4px; */
     overflow: hidden;
-}
-
-:root {
-    --table-border: 1px solid var(--color-scale-gray-2) !important;
 }
 
 table {
