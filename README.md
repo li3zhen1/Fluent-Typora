@@ -29,5 +29,13 @@ The required font faces are not provided in this repository. You should download
 
 ## Escapings
 
-- The early version of this theme contains some tricky escapings. I'll release another version later with some escapings.
+You can place headers in blockquote with styles. 
 
+```markdown
+> # Bookmark
+This is a bookmark.
+```
+
+And this theme renders them like this: 
+
+![fluent escaping](/fluent/escaping.png)
