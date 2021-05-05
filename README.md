@@ -1,4 +1,4 @@
-![fluent](/fluent/screenshot.png)
+![fluent](/fluent/fluent.png)
 
 # Fluent-Typora
 
@@ -23,10 +23,11 @@ The required font faces are not provided in this repository. You should download
 
 ## Screenshots
 
-![fluent light](/fluent/light.png)
+![fluent light](/fluent/fluent-light.png)
 
-![fluent dark](/fluent/dark.png)
+![fluent dark](/fluent/fluent-dark.png)
 
-## Legacy
+## Escapings
 
 - The early version of this theme contains some tricky escapings. I'll release another version later with some escapings.
+

@@ -1,3 +1,18 @@
+/* font face configs */
+
+:root {
+    /* change your prefered font here */
+    --title-font: "Inter Display", "Inter";
+    --text-font: "Inter";
+    /* the Inter fontface family provides rich opentype features. see https://rsms.me/inter/  */
+    --general-font-feature-settings: "calt", "ccmp", "kern", "salt" 0;
+    --cjk-font: "Source Han Sans SC", "思源黑体 CN", "思源黑体";
+    --mono-font: "JetBrains Mono";
+    --fallback-font: "system-ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* general color configs */
+
 :root {
     --color-scale-black: #1b1f23;
     --color-scale-white: #fff;
@@ -32,17 +47,13 @@
     --color-cm-meta: #6933b1;
     --color-cm-builtin: #e36209;
     --color-cm-v3: #43a8b3;
+    --color-cm-v: #c53929;
     --color-cm-link: #24a3c3;
     --text-link: #486df1;
 }
 
 :root {
     --control-text-color: var(--color-text-secondary);
-    --title-font: "Inter Display", "Inter";
-    --text-font: "Inter";
-    --cjk-font: "Source Han Sans SC", "思源黑体 CN", "思源黑体";
-    --mono-font: "JetBrains Mono";
-    --fallback-font: "system-ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --bg-color: #ffffff;
     /*change background*/
     --text-color: var(--color-text-primary);
@@ -93,6 +104,7 @@
     --title-color: #08090b;
     --monospace: var(--mono);
     --mark-border: none;
+    --table-border: 1px solid var(--color-scale-gray-2) !important;
 }
 
 /* CJK override */
@@ -125,8 +137,9 @@ html {
     font-size: 16px;
 }
 
-body {
+body, .file-list-item-summary {
     font-family: var(--general-font);
+    font-feature-settings: var(--general-font-feature-settings);
     color: var(--text-color);
     line-height: 1.6;
 }
@@ -166,6 +179,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2, h3, h4 {
     color: var(--title-color);
+    letter-spacing: -0.04rem;
 }
 
 h6 {
@@ -348,6 +362,9 @@ code {
     pre {
         word-wrap: break-word;
     }
+    input[type=checkbox] {
+        margin-top: -1px!important;
+    }
 }
 
 #write pre.md-meta-block {
@@ -473,7 +490,11 @@ header, .context-menu, .megamenu-content, footer {
     font-weight: 700!important;
 }
 
-.cm-variable, .cm-tag {
+.cm-variable {
+    color: var(--color-cm-v)!important;
+}
+
+.cm-tag {
     color: var(--color-cm-keyword)!important;
     font-weight: 700!important;
 }
@@ -504,11 +525,11 @@ header, .context-menu, .megamenu-content, footer {
     color: var(--color-cm-link)!important;
 }
 
-.cm-type{
+.cm-type {
     color: var(--color-cm-v3);
 }
 
-.cm-property{
+.cm-property {
     color: var(--color-cm-v3)!important;
 }
 
@@ -559,9 +580,23 @@ a {
     color: var(--text-link);
 }
 
-/* i.file-node-icon.fa.fa-folder {
-    
-} */
+span.ty-icon.ty-delete-button::before {
+    background-image: var(--dismiss);
+    vertical-align: middle;
+    content: " ";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+i.fa.fa-folder-o::before {
+    background-image: var(--folder);
+    vertical-align: middle;
+    content: " ";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
 
 i.file-node-icon.fa.fa-folder::before {
     background-image: var(--folder);
@@ -807,10 +842,6 @@ table.md-table {
     overflow: hidden;
 }
 
-:root {
-    --table-border: 1px solid var(--color-scale-gray-2) !important;
-}
-
 table {
     border-collapse: separate;
 }
@@ -865,4 +896,16 @@ table tr:nth-child(2n), table thead>tr {
 
 table tbody tr:nth-child(2n+1) {
     background-color: var(--bg-color);
+}
+
+thead:last-child>tr:last-child>th:first-child {
+    border-bottom-left-radius: 4px;
+}
+
+thead:last-child>tr:last-child>th:last-child {
+    border-bottom-right-radius: 4px;
+}
+
+table {
+    font-feature-settings: "tnum";
 }
