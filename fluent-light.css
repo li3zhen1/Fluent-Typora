@@ -769,6 +769,10 @@ del {
     color: white;
 }
 
+.file-library-node.file-tree-node.active.file-node-on-edit>.file-node-content {
+    color: inherit;
+}
+
 .file-library-node.file-tree-node.active>.file-node-content>i {
     filter: var(--icon-filer);
 }
