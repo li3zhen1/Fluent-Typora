@@ -830,7 +830,7 @@ del {
 }
 
 .file-library-node.file-tree-node.active>.file-node-content {
-    color: white;
+    color: black;
 }
 
 .file-library-node.file-tree-node.active.file-node-on-edit>.file-node-content {
